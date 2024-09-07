@@ -35,5 +35,5 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     else:
         return func.HttpResponse(
             "Please provide a URL in the query string or request body.",
-            status_code=400,
+            status_code=401,
         )
